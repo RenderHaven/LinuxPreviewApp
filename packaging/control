@@ -1,0 +1,29 @@
+Package: preview
+Version: 1.0.0
+Section: graphics
+Priority: optional
+Architecture: all
+Maintainer: Vikram Balai <vikrambalai1002@gmail.com>
+Depends: python3 (>= 3.10),
+         python3-gi (>= 3.42),
+         python3-cairo,
+         gir1.2-gtk-4.0 (>= 4.10),
+         gir1.2-adw-1 (>= 1.4),
+         gir1.2-gdkpixbuf-2.0,
+         gir1.2-graphene-1.0
+Recommends: gir1.2-poppler-0.18, poppler-utils, python3-gi-cairo
+Suggests: libheif-gdk-pixbuf, webp-pixbuf-loader
+Homepage: https://github.com/nxtwave/preview
+Description: Image and PDF viewer for the Linux desktop
+ Preview is a fast viewer for images and PDF documents, built with GTK4 and
+ libadwaita so it matches the rest of a modern GNOME desktop.
+ .
+ It opens every format the system has a GdkPixbuf loader for - including PNG,
+ JPEG, WebP, AVIF, HEIC, JPEG XL, TIFF and SVG - alongside multi-page PDFs.
+ Documents open in tabs, each with a thumbnail sidebar, continuous or single
+ page scrolling, zoom to fit, fill or actual size, rotation, full text search
+ across PDF pages, rectangular selection with cropping, export between image
+ formats, a timed slideshow and printing.
+ .
+ PDF support uses the Poppler GObject bindings when gir1.2-poppler-0.18 is
+ installed, and falls back to the poppler-utils command line tools otherwise.

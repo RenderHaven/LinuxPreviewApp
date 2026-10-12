@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+"""Launcher for the Preview image and PDF viewer."""
+
+import os
+import sys
+
+
+def _package_root() -> str:
+    """Find the directory containing the ``preview`` package.
+
+    Checks the installed location, then the same prefix this script was run
+    from (so a package extracted anywhere still works), then the source
+    checkout layout.
+    """
+    script = os.path.realpath(__file__)
+    bindir = os.path.dirname(script)
+    candidates = [
+        "/usr/share/preview",
+        os.path.join(os.path.dirname(bindir), "share", "preview"),
+        os.path.dirname(bindir),
+    ]
+    for candidate in candidates:
+        if os.path.isdir(os.path.join(candidate, "preview")):
+            return candidate
+    return candidates[-1]
+
+
+sys.path.insert(0, _package_root())
+
+from preview.app import main  # noqa: E402
+
+sys.exit(main())

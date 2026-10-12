@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.nxtwave.Preview</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Preview</name>
+  <summary>View and export images and PDF documents</summary>
+  <description>
+    <p>
+      Preview is a fast image and PDF viewer for the Linux desktop, built with
+      GTK4 and libadwaita. It opens the formats your system has loaders for,
+      including PNG, JPEG, WebP, AVIF, HEIC, JPEG XL, TIFF and SVG, alongside
+      multi-page PDF documents.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Tabs, so several documents stay open at once</li>
+      <li>Thumbnail sidebar with lazy rendering for long documents</li>
+      <li>Continuous or single-page scrolling</li>
+      <li>Zoom to fit, fill or actual size, and zoom at the pointer</li>
+      <li>Rotation in 90 degree steps</li>
+      <li>Full-text search across PDF pages</li>
+      <li>Rectangular selection, cropping and export between formats</li>
+      <li>Fullscreen viewing and a timed slideshow</li>
+      <li>Printing through the standard GTK print dialog</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">com.nxtwave.Preview.desktop</launchable>
+  <categories>
+    <category>Graphics</category>
+    <category>Viewer</category>
+  </categories>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-10-12">
+      <description><p>First release.</p></description>
+    </release>
+  </releases>
+</component>

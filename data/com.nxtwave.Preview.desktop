@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Preview
+GenericName=Image and PDF Viewer
+Comment=View and export images and PDF documents
+Exec=preview %F
+TryExec=preview
+Icon=com.nxtwave.Preview
+Terminal=false
+Categories=Graphics;Viewer;2DGraphics;RasterGraphics;GTK;
+Keywords=image;picture;photo;pdf;document;viewer;preview;zoom;
+StartupNotify=true
+StartupWMClass=com.nxtwave.Preview
+MimeType=application/pdf;image/png;image/jpeg;image/gif;image/webp;image/tiff;image/bmp;image/x-bmp;image/x-icon;image/svg+xml;image/avif;image/heif;image/jxl;image/x-portable-pixmap;image/x-portable-bitmap;image/x-tga;image/x-xpixmap;image/jp2;
